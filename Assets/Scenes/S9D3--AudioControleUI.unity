@@ -5198,6 +5198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 499508591}
+  - component: {fileID: 499508592}
   m_Layer: 0
   m_Name: GestionnaireMusique
   m_TagString: Untagged
@@ -5220,6 +5221,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1840375689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499508592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499508590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b2ce34a3a1b5e4c8a2a5a0d667e09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: 24100000, guid: 61b090fca8cc1e949baa376a3d5d65e8, type: 2}
 --- !u!1001 &510311633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22541,7 +22555,7 @@ AudioSource:
   m_GameObject: {fileID: 3704878176862364124}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 61b090fca8cc1e949baa376a3d5d65e8,
+  OutputAudioMixerGroup: {fileID: -7089426008672940119, guid: 61b090fca8cc1e949baa376a3d5d65e8,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: bc8dd133e54e2bb41975ded7b770c300, type: 3}
   m_PlayOnAwake: 1
@@ -23339,7 +23353,7 @@ AudioSource:
   m_GameObject: {fileID: 3704878178044940567}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 61b090fca8cc1e949baa376a3d5d65e8,
+  OutputAudioMixerGroup: {fileID: 7450193221982030875, guid: 61b090fca8cc1e949baa376a3d5d65e8,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 78877ff3a6ab3214a9e4e2111579b7b6, type: 3}
   m_PlayOnAwake: 1
@@ -24238,9 +24252,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GestionnaireAudio, Assembly-CSharp
-        m_MethodName: AjusterVolumeMusique
+      - m_Target: {fileID: 499508592}
+        m_TargetAssemblyTypeName: GestionMusique, Assembly-CSharp
+        m_MethodName: ChangerVolumemusique
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
